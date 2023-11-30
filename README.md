@@ -19,7 +19,11 @@ The rule of thumb is to always get a model with a higher number of parameters ev
 See selection below<br>
 ![Alt text](codellama_hugyface_download.png?raw=true "codellamma selection")<br>
 I selected https://huggingface.co/TheBloke/CodeLlama-34B-Instruct-GGUF/resolve/main/codellama-34b-instruct.Q2_K.gguf?download=true
-as I have the RTX3050 with 16G<br>
+my GPU RTX3050<br>
+NVIDIA CUDA Cores	2560 / 2304
+Boost Clock (GHz)	1.78 / 1.76
+Memory Size	8 GB
+Memory Type	GDDR6
 
      wget https://huggingface.co/TheBloke/CodeLlama-34B-Instruct-GGUF/resolve/main/codellama-34b-instruct.Q2_K.gguf?download=true
 
