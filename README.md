@@ -1,4 +1,4 @@
-# codellama
+# codellama (AI that generate code)
 This repository will have all my code to use codelama for code complition capabilties for code dev environment
 ## Instelation of codellama models from Meta
 First have anove disk apace tpo download the models you are interested
@@ -18,6 +18,10 @@ More parameters will be better, even if at a lower precision. Its definitely wor
 The rule of thumb is to always get a model with a higher number of parameters even lower precision, over a model with less parameters and higher precision. However, there are exceptions to the rule.
 See selection below<br>
 ![Alt text](codellama_hugyface_download.png?raw=true "codellamma selection")<br>
+I selected https://huggingface.co/TheBloke/CodeLlama-34B-Instruct-GGUF/resolve/main/codellama-34b-instruct.Q2_K.gguf?download=true
+as I have the RTX3050 with 16G<br>
+
+     wget https://huggingface.co/TheBloke/CodeLlama-34B-Instruct-GGUF/resolve/main/codellama-34b-instruct.Q2_K.gguf?download=true
 
 
 
