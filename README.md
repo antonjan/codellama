@@ -11,6 +11,15 @@ Then select the Modles you want to download from the list by entering them with 
 
 Down load will start and it could take a long time to compleetdepending on the models you have selected
 
+If you want to download from huggyface that is already precompiled you can download here https://huggingface.co/TheBloke/CodeLlama-34B-Instruct-GGUF
+selectthe gguf file you need
+### How do I select the correct compiled vertion
+More parameters will be better, even if at a lower precision. Its definitely worth it.
+The rule of thumb is to always get a model with a higher number of parameters even lower precision, over a model with less parameters and higher precision. However, there are exceptions to the rule.
+See selection below
+![Alt text](codellama_huggyface_download.png?raw=true "codellamma selection")<br>
+
+
 
 
 
