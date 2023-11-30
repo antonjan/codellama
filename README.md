@@ -16,7 +16,7 @@ selectthe gguf file you need
 ### How do I select the correct compiled vertion
 More parameters will be better, even if at a lower precision. Its definitely worth it.
 The rule of thumb is to always get a model with a higher number of parameters even lower precision, over a model with less parameters and higher precision. However, there are exceptions to the rule.
-See selection below
+See selection below<br>
 ![Alt text](codellama_hugyface_download.png?raw=true "codellamma selection")<br>
 
 
