@@ -5,20 +5,52 @@ This repository will have all my code to use codelama for code complition capabi
 then check if drivers is installed
 
      ubuntu-drivers devices
-     All the available drivers are already installed.
-     anton@anton-MS-7D46:~$ ubuntu-drivers devices
-     == /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
-     modalias : pci:v000010DEd00002507sv000010DEsd00002507bc03sc00i00
-     vendor   : NVIDIA Corporation
-     driver   : nvidia-driver-545 - third-party non-free
-     driver   : nvidia-driver-520 - third-party non-free
-     driver   : nvidia-driver-525 - third-party non-free
-     driver   : nvidia-driver-515 - third-party non-free
-     driver   : nvidia-driver-530 - third-party non-free
-     driver   : nvidia-driver-510 - distro non-free recommended
-     driver   : nvidia-driver-510-server - distro non-free
-     driver   : nvidia-driver-535 - third-party non-free
-     driver   : xserver-xorg-video-nouveau - distro free builtin
+All the available drivers are already installed.
+anton@anton-MS-7D46:~$ ubuntu-drivers devices
+== /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
+modalias : pci:v000010DEd00002507sv000010DEsd00002507bc03sc00i00
+vendor   : NVIDIA Corporation
+driver   : nvidia-driver-545 - third-party non-free
+driver   : nvidia-driver-520 - third-party non-free
+driver   : nvidia-driver-525 - third-party non-free
+driver   : nvidia-driver-515 - third-party non-free
+driver   : nvidia-driver-530 - third-party non-free
+driver   : nvidia-driver-510 - distro non-free recommended
+driver   : nvidia-driver-510-server - distro non-free
+driver   : nvidia-driver-535 - third-party non-free
+driver   : xserver-xorg-video-nouveau - distro free builtin
+reboot
+Check if you RTX device is seen by ubuntu
+
+    lshw -numeric -C display
+    
+  *-display                 
+       description: VGA compatible controller
+       product: GA106 [Geforce RTX 3050] [10DE:2507]
+       vendor: NVIDIA Corporation [10DE]
+       physical id: 0
+       bus info: pci@0000:01:00.0
+       logical name: /dev/fb0
+       version: a1
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pm msi pciexpress vga_controller cap_list fb
+       configuration: depth=32 latency=0 mode=1600x900 visual=truecolor xres=1600 yres=900
+       resources: iomemory:600-5ff iomemory:600-5ff memory:81000000-81ffffff memory:6000000000-600fffffff memory:6010000000-6011ffffff ioport:3000(size=128) memory:c0000-dffff
+  *-display
+       description: Display controller
+       product: Alder Lake-S GT1 [UHD Graphics 770] [8086:4690]
+       vendor: Intel Corporation [8086]
+       physical id: 2
+       bus info: pci@0000:00:02.0
+       logical name: /dev/fb0
+       version: 0c
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pciexpress msi pm bus_master cap_list fb
+       configuration: depth=32 driver=i915 latency=0 resolution=1600,900
+       resources: iomemory:600-5ff iomemory:400-3ff irq:137 memory:6012000000-6012ffffff memory:4000000000-400fffffff ioport:4000(size=64) memory:4010000000-4016ffffff memory:4020000000-40ffffffff
+     
 
 
 ## Instelation of codellama models from Meta
