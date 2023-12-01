@@ -2,6 +2,24 @@
 This repository will have all my code to use codelama for code complition capabilties for code dev environment
 ## Configuering my RTX3050 on ubuntu 22
      sudo ubuntu-drivers autoinstall
+then check if drivers is installed
+
+     ubuntu-drivers devices
+     All the available drivers are already installed.
+     anton@anton-MS-7D46:~$ ubuntu-drivers devices
+     == /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
+     modalias : pci:v000010DEd00002507sv000010DEsd00002507bc03sc00i00
+     vendor   : NVIDIA Corporation
+     driver   : nvidia-driver-545 - third-party non-free
+     driver   : nvidia-driver-520 - third-party non-free
+     driver   : nvidia-driver-525 - third-party non-free
+     driver   : nvidia-driver-515 - third-party non-free
+     driver   : nvidia-driver-530 - third-party non-free
+     driver   : nvidia-driver-510 - distro non-free recommended
+     driver   : nvidia-driver-510-server - distro non-free
+     driver   : nvidia-driver-535 - third-party non-free
+     driver   : xserver-xorg-video-nouveau - distro free builtin
+
 
 ## Instelation of codellama models from Meta
 First have anove disk apace tpo download the models you are interested
