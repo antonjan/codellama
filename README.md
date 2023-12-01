@@ -1,10 +1,45 @@
 # codellama (AI that generate code)
 This repository will have all my code to use codelama for code complition capabilties for code dev environment
 ## Configuering my RTX3050 on ubuntu 22
+     sudo apt-get remove --purge '^nvidia-.*'
+     sudo apt-get remove --purge '^libnvidia-.*'
+     sudo apt-get remove --purge '^cuda-.*'
+     sudo apt-get remove --purge '^nvidia-.*'
+     sudo apt-get remove --purge '^libnvidia-.*'
+     sudo apt-get remove --purge '^cuda-.*'
+     sudo apt autoremove
+     sudo apt-get install linux-headers-$(uname -r)
+     sudo add-apt-repository ppa:graphics-drivers/ppa --yes
+     sudo apt update
+     sudo ubuntu-drivers devices
      sudo ubuntu-drivers autoinstall
-then check if drivers is installed
+     sudo shutdown -r 0
+now check if you can see the GPU     
+     
+     nvidia-smi
+     Fri Dec  1 12:21:59 2023       
+    +---------------------------------------------------------------------------------------+
+    | NVIDIA-SMI 545.29.06              Driver Version: 545.29.06    CUDA Version: 12.3     |
+    |-----------------------------------------+----------------------+----------------------+
+    | GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+    | Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+    |                                         |                      |               MIG M. |
+    |=========================================+======================+======================|
+    |   0  NVIDIA GeForce RTX 3050        Off | 00000000:01:00.0 Off |                  N/A |
+    |  0%   39C    P8               7W / 140W |     18MiB /  8192MiB |      0%      Default |
+    |                                         |                      |                  N/A |
+    +-----------------------------------------+----------------------+----------------------+
+                                                                                             
+    +---------------------------------------------------------------------------------------+
+    | Processes:                                                                            |
+    |  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+    |        ID   ID                                                             Usage      |
+    |=======================================================================================|
+    |    0   N/A  N/A      1813      G   /usr/lib/xorg/Xorg                            9MiB |
+    |    0   N/A  N/A      2455      G   /usr/bin/gnome-shell                          2MiB |
+    +---------------------------------------------------------------------------------------+
 
-     ubuntu-drivers devices
+       ubuntu-drivers devices
 All the available drivers are already installed.
 anton@anton-MS-7D46:~$ ubuntu-drivers devices
 == /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
