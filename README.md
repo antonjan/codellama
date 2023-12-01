@@ -57,6 +57,8 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 reboot
 Check if you RTX device is seen by ubuntu
 
+    nvidia-detector
+    nvidia-driver-545
     lshw -numeric -C display
     
   *-display                 
