@@ -1,5 +1,8 @@
 # codellama (AI that generate code)
 This repository will have all my code to use codelama for code complition capabilties for code dev environment
+## Configuering my RTX3050 on ubuntu 22
+     sudo ubuntu-drivers autoinstall
+
 ## Instelation of codellama models from Meta
 First have anove disk apace tpo download the models you are interested
 run the download.sh script and add the licence url receved by email from meta
