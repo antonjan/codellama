@@ -126,7 +126,7 @@ Memory Type	GDDR6<br>
 
      wget https://huggingface.co/TheBloke/CodeLlama-34B-Instruct-GGUF/resolve/main/codellama-34b-instruct.Q2_K.gguf?download=true
 
-##Black list the devive
+##Black list the device
 
 Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following contents:
 
