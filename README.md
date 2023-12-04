@@ -88,7 +88,16 @@ Check if you RTX device is seen by ubuntu
        configuration: depth=32 driver=i915 latency=0 resolution=1600,900
        resources: iomemory:600-5ff iomemory:400-3ff irq:137 memory:6012000000-6012ffffff memory:4000000000-400fffffff ioport:4000(size=64) memory:4010000000-4016ffffff memory:4020000000-40ffffffff
      
+## installing the cudo libraries on ubuntu
+follow the following instructions see url https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
 
+    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
+    sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
+    wget https://developer.download.nvidia.com/compute/cuda/12.3.1/local_installers/cuda-repo-ubuntu2204-12-3-local_12.3.1-545.23.08-1_amd64.deb
+    sudo dpkg -i cuda-repo-ubuntu2204-12-3-local_12.3.1-545.23.08-1_amd64.deb
+    sudo cp /var/cuda-repo-ubuntu2204-12-3-local/cuda-*-keyring.gpg /usr/share/keyrings/
+    sudo apt-get update
+    sudo apt-get -y install cuda-toolkit-12-3
 
 ## Instelation of codellama models from Meta
 First have anove disk apace tpo download the models you are interested
